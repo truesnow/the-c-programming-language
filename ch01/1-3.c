@@ -8,14 +8,16 @@
 /**
  * 华氏度转摄氏度
  */
-float f2c(float f) {
+float f2c(float f) 
+{
     return 5.0 * (f - 32.0) / 9.0;
 }
 
 /**
  * 华氏度转摄氏度表
  */
-void f2cTable(int min, int max, int step) {
+void f2cTable(int min, int max, int step) 
+{
     // 华氏度
     float f;
     // 摄氏度
