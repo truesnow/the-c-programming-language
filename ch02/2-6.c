@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <math.h>
 
 /**
  * 练习 2-6
@@ -12,8 +11,11 @@ int tailnbit(unsigned m, unsigned n);
 
 int main()
 {
+    // 1
     printf("%d 有 %d 位二进制\n", 1, bitlen(1));
+    // 2
     printf("%d 有 %d 位二进制\n", 3, bitlen(3));
+    // 3
     printf("%d 有 %d 位二进制\n", 5, bitlen(5));
 
     // 1
@@ -48,7 +50,7 @@ int bitlen(unsigned n)
  */
 int tailnbit(unsigned m, unsigned n)
 {
-    return m & ((int)pow(2, n) - 1);
+    return m & ((1 << n) - 1);
 }
 
 int setbits(int x, int p, int n, int y)
